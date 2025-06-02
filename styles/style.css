@@ -1,0 +1,115 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: content-box;
+  font-size: 62.5%;
+}
+body {
+  background: #2f455c;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+  padding: 15px;
+  gap: 15px;
+}
+.categoria {
+  box-shadow: 0px 0px 1px 3px black;
+
+  width: 100rem;
+  height: 55rem;
+  margin: auto;
+}
+.titulo {
+  margin-top: 15px;
+  text-align: center;
+}
+.titulo_gen {
+  color: grey;
+  text-align: center;
+  font-size: 3rem;
+}
+.nav-bg {
+  max-width: 100rem;
+  width: auto;
+  margin: 2rem auto;
+  border-radius: 5px;
+  background-color: transparent;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  justify-content: space-evenly;
+}
+a {
+  font-family: monospace;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #222;
+  width: 10rem;
+  background-color: #eee;
+  padding: 10px;
+  width: 22rem;
+}
+
+a:hover {
+  background-color: #ccc6c6;
+  color: #222;
+}
+a:nth-child(1) {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+a:nth-child(4) {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+footer {
+  text-align: center;
+}
+
+/*Parte proyectos*/
+.secciones {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    background-color: red;
+    padding: 10px;
+  margin: 0 auto;
+  width: 80%;
+
+}
+.proyecto {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  height: 50em
+  ;
+}
+.proyecto_contenedor-imagen {
+  width: 30rem;
+  border-radius: 10px;
+  
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.proyecto_contenedor-descripcion {
+}
